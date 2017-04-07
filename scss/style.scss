@@ -4,8 +4,9 @@ $secondary_color: #313139;
 $tertiary_color: #DE5F4C;
 $quarternary_color: $primary_color;
 $black_accent: #28282E;
+$bright_orange: #FF512F;
 
-$font-gray: black;
+$font-gray: #666;
 /* Full image background */
 body {
   font-family: 'Raleway', sans-serif,cursive;
@@ -28,15 +29,21 @@ main.container-fluid {
   margin-top: 1200px;
 }
 /* Base presets */
-ul li {
+ul {
+  li {
   list-style-type: none;
   display: inline-block;
+  }
 }
-
-/* Typogrpahy */
-h1, h2, h3, h4, h5, h6, p {
+p {
   text-align: center;
-  color: $primary_color;
+  color: black;
+}
+/* Typogrpahy */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
 }
 
 /* Mobile navbar toggle */
@@ -69,30 +76,56 @@ header#welcome {
 }
 
 #services {
+  h4 {
+    padding-top: 10px;
+    color: white;
+    &:first-of-type {
+      color: black;
+    }
+  }
+  h5 {
+    margin-bottom: 200px;
+    font-size: 16px;
+  }
   li {
     list-style-type: none;
     text-align: center;
     &:first-of-type {
       background-color: $primary_color;
+      color: black;
     }
     &:nth-of-type(2) {
     background-color: $secondary_color;
+    h4, h5 {
+      color: white;
+      }
     }
     &:nth-of-type(3) {
       background-color: $tertiary_color;
+      h4, h5 {
+        color: white;
+      }
     }
     &:last-of-type {
       background-color: $quarternary_color;
     }
+    h4 ~ h5 {
+      text-transform: none;
+    }
     span {
+      font-size: 50px;
       display: block;
-      padding: 20px;
+      padding: 40px;
       color: white;
-      background-color: $font-gray;
+      background-color: $black_accent;
       border-radius: 50%;
-      height: 60px;
-      width: 60px;
+      height: 130px;
+      width: 130px;
       margin: 0 auto;
+      margin-top: 175px;
     }
   }
+}
+#team ul {
+  padding-left: 0;
 }

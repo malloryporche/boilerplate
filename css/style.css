@@ -25,10 +25,15 @@ ul li {
   list-style-type: none;
   display: inline-block; }
 
-/* Typogrpahy */
-h1, h2, h3, h4, h5, h6, p {
+p {
   text-align: center;
-  color: #F2F2F5; }
+  color: black; }
+
+/* Typogrpahy */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black; }
 
 /* Mobile navbar toggle */
 span.icon-bar {
@@ -55,25 +60,45 @@ header#welcome {
       padding: 20px;
       margin: 0 10px; }
 
+#services h4 {
+  padding-top: 10px;
+  color: white; }
+  #services h4:first-of-type {
+    color: black; }
+#services h5 {
+  margin-bottom: 200px;
+  font-size: 16px; }
 #services li {
   list-style-type: none;
   text-align: center; }
   #services li:first-of-type {
-    background-color: #F2F2F5; }
+    background-color: #F2F2F5;
+    color: black; }
   #services li:nth-of-type(2) {
     background-color: #313139; }
+    #services li:nth-of-type(2) h4, #services li:nth-of-type(2) h5 {
+      color: white; }
   #services li:nth-of-type(3) {
     background-color: #DE5F4C; }
+    #services li:nth-of-type(3) h4, #services li:nth-of-type(3) h5 {
+      color: white; }
   #services li:last-of-type {
     background-color: #F2F2F5; }
+  #services li h4 ~ h5 {
+    text-transform: none; }
   #services li span {
+    font-size: 50px;
     display: block;
-    padding: 20px;
+    padding: 40px;
     color: white;
-    background-color: black;
+    background-color: #28282E;
     border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    margin: 0 auto; }
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 175px; }
+
+#team ul {
+  padding-left: 0; }
 
 /*# sourceMappingURL=style.css.map */
