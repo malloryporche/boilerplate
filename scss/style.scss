@@ -1,6 +1,11 @@
-/* SASS VARIABLES */
-$primary_color: #313139;
+/* SASS COLORS and VARIABLES */
+$primary_color: #F2F2F5 ;
+$secondary_color: #313139;
+$tertiary_color: #DE5F4C;
+$quarternary_color: $primary_color;
+$black_accent: #28282E;
 
+$font-gray: black;
 /* Full image background */
 body {
   font-family: 'Raleway', sans-serif,cursive;
@@ -61,4 +66,33 @@ header#welcome {
     margin: 0 10px;
   }
 }
+}
+
+#services {
+  li {
+    list-style-type: none;
+    text-align: center;
+    &:first-of-type {
+      background-color: $primary_color;
+    }
+    &:nth-of-type(2) {
+    background-color: $secondary_color;
+    }
+    &:nth-of-type(3) {
+      background-color: $tertiary_color;
+    }
+    &:last-of-type {
+      background-color: $quarternary_color;
+    }
+    span {
+      display: block;
+      padding: 20px;
+      color: white;
+      background-color: $font-gray;
+      border-radius: 50%;
+      height: 60px;
+      width: 60px;
+      margin: 0 auto;
+    }
+  }
 }

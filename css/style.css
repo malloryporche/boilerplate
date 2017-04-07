@@ -1,4 +1,4 @@
-/* SASS VARIABLES */
+/* SASS COLORS and VARIABLES */
 /* Full image background */
 body {
   font-family: 'Raleway', sans-serif,cursive;
@@ -28,7 +28,7 @@ ul li {
 /* Typogrpahy */
 h1, h2, h3, h4, h5, h6, p {
   text-align: center;
-  color: #313139; }
+  color: #F2F2F5; }
 
 /* Mobile navbar toggle */
 span.icon-bar {
@@ -54,5 +54,26 @@ header#welcome {
       border: 1px solid black;
       padding: 20px;
       margin: 0 10px; }
+
+#services li {
+  list-style-type: none;
+  text-align: center; }
+  #services li:first-of-type {
+    background-color: #F2F2F5; }
+  #services li:nth-of-type(2) {
+    background-color: #313139; }
+  #services li:nth-of-type(3) {
+    background-color: #DE5F4C; }
+  #services li:last-of-type {
+    background-color: #F2F2F5; }
+  #services li span {
+    display: block;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
