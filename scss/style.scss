@@ -1,3 +1,6 @@
+/* SASS VARIABLES */
+$primary_color: #313139;
+
 /* Full image background */
 body {
   font-family: 'Raleway', sans-serif,cursive;
@@ -22,20 +25,40 @@ main.container-fluid {
 /* Base presets */
 ul li {
   list-style-type: none;
+  display: inline-block;
 }
+
 /* Typogrpahy */
-h1, h2, h3, h4, h5 h6, p {
+h1, h2, h3, h4, h5, h6, p {
   text-align: center;
+  color: $primary_color;
 }
 
 /* Mobile navbar toggle */
 span.icon-bar {
   background-color: white;
 }
-nav.nav {
-  position: fixed;
+.container .navbar-header {
+  margin: 0;
+}
+.nav {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 .navbar-header img {
   height: 45px;
   padding: 5px;
+}
+
+header#welcome {
+  padding-top: 165px;
+  ul {
+    text-align: center;
+    padding-top: 45px;
+    li {
+    border: 1px solid black;
+    padding: 20px;
+    margin: 0 10px;
+  }
+}
 }
