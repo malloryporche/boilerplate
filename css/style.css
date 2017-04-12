@@ -2,11 +2,14 @@
 /* Full image background */
 body {
   font-family: 'Raleway', sans-serif,cursive;
-  background: url(../imgs/bg.jpg) no-repeat center center fixed;
+  background: url(../imgs/bg@1x.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    body {
+      background: url(../imgs/bg@2x.jpg) no-repeat center center fixed; } }
 
 main, footer {
   background: white; }
@@ -21,19 +24,41 @@ main.container-fluid {
   margin-top: 1200px; }
 
 /* Base presets */
-ul li {
-  list-style-type: none;
-  display: inline-block; }
+ul {
+  padding-left: 0px; }
+  ul li {
+    list-style-type: none;
+    display: inline-block; }
+  ul a {
+    text-decoration: none; }
+    ul a:hover {
+      text-decoration: none; }
 
 p {
   text-align: center;
   color: black; }
+  p:first-of-type {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em; }
 
 /* Typogrpahy */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  text-align: center;
+  color: #666;
+  letter-spacing: 3px; }
+
+h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
-  color: black; }
+  color: #666;
+  margin: 40px auto 20px; }
+
+h2 ~ h3, h4 ~ h5 {
+  text-transform: none; }
 
 /* Mobile navbar toggle */
 span.icon-bar {
@@ -50,6 +75,9 @@ span.icon-bar {
   height: 45px;
   padding: 5px; }
 
+.navbar-brand {
+  padding: 15px 0px; }
+
 header#welcome {
   padding-top: 165px; }
   header#welcome ul {
@@ -57,8 +85,10 @@ header#welcome {
     padding-top: 45px; }
     header#welcome ul li {
       border: 1px solid black;
-      padding: 20px;
-      margin: 0 10px; }
+      padding: 10px 30px;
+      margin: 0 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px; }
 
 #services h4 {
   padding-top: 10px;
@@ -66,7 +96,7 @@ header#welcome {
   #services h4:first-of-type {
     color: black; }
 #services h5 {
-  margin-bottom: 200px;
+  margin-bottom: 80px;
   font-size: 16px; }
 #services li {
   list-style-type: none;
@@ -84,8 +114,6 @@ header#welcome {
       color: white; }
   #services li:last-of-type {
     background-color: #F2F2F5; }
-  #services li h4 ~ h5 {
-    text-transform: none; }
   #services li span {
     font-size: 50px;
     display: block;
@@ -96,7 +124,7 @@ header#welcome {
     height: 130px;
     width: 130px;
     margin: 0 auto;
-    margin-top: 175px; }
+    margin-top: 45px; }
 
 #team ul {
   padding-left: 0; }

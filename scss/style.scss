@@ -7,10 +7,25 @@ $black_accent: #28282E;
 $bright_orange: #FF512F;
 
 $font-gray: #666;
+
 /* Full image background */
+@mixin retina {
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
 body {
   font-family: 'Raleway', sans-serif,cursive;
-  background: url(../imgs/bg.jpg) no-repeat center center fixed;
+  @include retina {
+    background: url(../imgs/bg@2x.jpg) no-repeat center center fixed;
+  }
+  background: url(../imgs/bg@1x.jpeg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,22 +45,45 @@ main.container-fluid {
 }
 /* Base presets */
 ul {
+  padding-left: 0px;
   li {
   list-style-type: none;
   display: inline-block;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 p {
   text-align: center;
   color: black;
+  &:first-of-type {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 1.5em;
+  }
 }
 /* Typogrpahy */
-h1, h2, h3, h4, h5, h6 {
+h1 {
+  text-align: center;
+  color: $font-gray;
+  letter-spacing: 3px;
+}
+h2, h3, h4, h5, h6 {
   text-align: center;
   text-transform: uppercase;
-  color: black;
+  color: $font-gray;
+  margin: 40px auto 20px;
 }
-
+h2 ~ h3, h4 ~ h5 {
+  text-transform: none;
+}
 /* Mobile navbar toggle */
 span.icon-bar {
   background-color: white;
@@ -61,7 +99,9 @@ span.icon-bar {
   height: 45px;
   padding: 5px;
 }
-
+.navbar-brand {
+  padding: 15px 0px;
+}
 header#welcome {
   padding-top: 165px;
   ul {
@@ -69,10 +109,12 @@ header#welcome {
     padding-top: 45px;
     li {
     border: 1px solid black;
-    padding: 20px;
+    padding: 10px 30px;
     margin: 0 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    }
   }
-}
 }
 
 #services {
@@ -81,12 +123,12 @@ header#welcome {
     color: white;
     &:first-of-type {
       color: black;
+      }
     }
-  }
   h5 {
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     font-size: 16px;
-  }
+    }
   li {
     list-style-type: none;
     text-align: center;
@@ -109,9 +151,6 @@ header#welcome {
     &:last-of-type {
       background-color: $quarternary_color;
     }
-    h4 ~ h5 {
-      text-transform: none;
-    }
     span {
       font-size: 50px;
       display: block;
@@ -122,7 +161,7 @@ header#welcome {
       height: 130px;
       width: 130px;
       margin: 0 auto;
-      margin-top: 175px;
+      margin-top: 45px;
     }
   }
 }
