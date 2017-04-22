@@ -88,16 +88,28 @@ span.icon-bar {
   padding: 15px 0px; }
 
 header#welcome {
-  padding-top: 165px; }
+  padding: 165px 50px; }
   header#welcome ul {
     text-align: center;
     padding-top: 45px; }
     header#welcome ul li {
       border: 1px solid black;
       padding: 10px 30px;
-      margin: 0 10px;
+      margin: 10px;
       text-transform: uppercase;
       letter-spacing: 2px; }
+
+/*Portfolio wraps for animation */
+article ul div {
+  display: inline-block; }
+
+.wrap li {
+  position: relative; }
+.wrap h3 {
+  position: absolute;
+  color: white;
+  top: 50%;
+  width: 100%; }
 
 #services h4 {
   padding-top: 10px;
