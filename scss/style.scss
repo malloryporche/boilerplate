@@ -135,8 +135,17 @@ article ul div {
 .wrap {
   li {
     position: relative;
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    &:hover {
+      h3 {
+        transform: scale(2.5);
+      }
+
+    }
   }
   h3 {
+  margin: 0;
   position: absolute;
   color: white;
   top: 50%;

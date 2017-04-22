@@ -104,8 +104,13 @@ article ul div {
   display: inline-block; }
 
 .wrap li {
-  position: relative; }
+  position: relative;
+  overflow: hidden;
+  transition: all .2s ease-in-out; }
+  .wrap li:hover h3 {
+    transform: scale(2.5); }
 .wrap h3 {
+  margin: 0;
   position: absolute;
   color: white;
   top: 50%;
