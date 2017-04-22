@@ -101,20 +101,32 @@ header#welcome {
 
 /*Portfolio wraps for animation */
 article ul div {
-  display: inline-block; }
+  display: inline-block;
+  overflow: hidden; }
 
-.wrap li {
+.wrap {
   position: relative;
   overflow: hidden;
-  transition: all .2s ease-in-out; }
-  .wrap li:hover h3 {
-    transform: scale(2.5); }
-.wrap h3 {
-  margin: 0;
-  position: absolute;
-  color: white;
-  top: 50%;
-  width: 100%; }
+  transition: all 2s ease-in-out; }
+  .wrap li {
+    transition: all 2s ease; }
+    .wrap li:hover img {
+      transform: scale(1.5);
+      transition: all 1s ease-in-out;
+      z-index: -1; }
+    .wrap li:hover h3 {
+      visibility: visible;
+      transform: scale(2.5);
+      transition: all 1s ease-in-out;
+      z-index: 1;
+      background-color: black; }
+  .wrap h3 {
+    margin: 0;
+    position: absolute;
+    color: white;
+    top: 50%;
+    width: 100%;
+    visibility: hidden; }
 
 #services h4 {
   padding-top: 10px;
