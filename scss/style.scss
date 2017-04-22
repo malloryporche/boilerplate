@@ -2,7 +2,7 @@
 $primary_color: #F2F2F5 ;
 $secondary_color: #313139;
 $tertiary_color: #DE5F4C;
-$quarternary_color: $primary_color;
+$quarternary_color: #666;
 $black_accent: #28282E;
 $bright_orange: #FF512F;
 
@@ -140,6 +140,9 @@ article ul div {
   li {
     display: table;
   }
+  img, h3 {
+    transition: all 2s ease-in-out;
+  }
     &:hover {
       img {
         transform: scale(2.5);
@@ -164,6 +167,7 @@ article ul div {
   width: 100%;
   visibility: hidden;
   padding-top: 50%;
+  transition: all 2s ease-in-out;
   }
 }
 
@@ -201,6 +205,9 @@ article ul div {
     }
     &:last-of-type {
       background-color: $quarternary_color;
+      h4, h5 {
+        color: white;
+      }
     }
     span {
       font-size: 50px;
@@ -214,6 +221,11 @@ article ul div {
       margin: 0 auto;
       margin-top: 45px;
     }
+  }
+}
+#blogs {
+  .wrap {
+    display: inline-block;
   }
 }
 #team ul {

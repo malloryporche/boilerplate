@@ -110,6 +110,8 @@ article ul div {
   transition: all 2s ease-in-out; }
   .wrap li {
     display: table; }
+  .wrap img, .wrap h3 {
+    transition: all 2s ease-in-out; }
   .wrap:hover img {
     transform: scale(2.5);
     transition: all 2s ease-in-out;
@@ -129,7 +131,8 @@ article ul div {
     color: white;
     width: 100%;
     visibility: hidden;
-    padding-top: 50%; }
+    padding-top: 50%;
+    transition: all 2s ease-in-out; }
 
 #services h4 {
   padding-top: 10px;
@@ -154,7 +157,9 @@ article ul div {
     #services li:nth-of-type(3) h4, #services li:nth-of-type(3) h5 {
       color: white; }
   #services li:last-of-type {
-    background-color: #F2F2F5; }
+    background-color: #666; }
+    #services li:last-of-type h4, #services li:last-of-type h5 {
+      color: white; }
   #services li span {
     font-size: 50px;
     display: block;
@@ -166,6 +171,9 @@ article ul div {
     width: 130px;
     margin: 0 auto;
     margin-top: 45px; }
+
+#blogs .wrap {
+  display: inline-block; }
 
 #team ul {
   padding-left: 0; }
