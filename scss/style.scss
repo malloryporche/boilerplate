@@ -138,29 +138,32 @@ article ul div {
   overflow: hidden;
   transition: all 2s ease-in-out;
   li {
-    transition: all 2s ease;
+    display: table;
+  }
     &:hover {
       img {
-        transform: scale(1.5);
-        transition: all 1s ease-in-out;
+        transform: scale(2.5);
+        transition: all 2s ease-in-out;
         z-index: -1;
       }
       h3 {
         visibility: visible;
-        transform: scale(2.5);
         transition: all 1s ease-in-out;
-        z-index: 1;
+        z-index: 6;
         background-color: black;
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        width: 100%;
       }
-    }
   }
   h3 {
   margin: 0;
   position: absolute;
   color: white;
-  top: 50%;
   width: 100%;
   visibility: hidden;
+  padding-top: 50%;
   }
 }
 

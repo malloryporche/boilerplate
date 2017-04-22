@@ -109,24 +109,27 @@ article ul div {
   overflow: hidden;
   transition: all 2s ease-in-out; }
   .wrap li {
-    transition: all 2s ease; }
-    .wrap li:hover img {
-      transform: scale(1.5);
-      transition: all 1s ease-in-out;
-      z-index: -1; }
-    .wrap li:hover h3 {
-      visibility: visible;
-      transform: scale(2.5);
-      transition: all 1s ease-in-out;
-      z-index: 1;
-      background-color: black; }
+    display: table; }
+  .wrap:hover img {
+    transform: scale(2.5);
+    transition: all 2s ease-in-out;
+    z-index: -1; }
+  .wrap:hover h3 {
+    visibility: visible;
+    transition: all 1s ease-in-out;
+    z-index: 6;
+    background-color: black;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    width: 100%; }
   .wrap h3 {
     margin: 0;
     position: absolute;
     color: white;
-    top: 50%;
     width: 100%;
-    visibility: hidden; }
+    visibility: hidden;
+    padding-top: 50%; }
 
 #services h4 {
   padding-top: 10px;
