@@ -175,11 +175,27 @@ article ul div {
 #blogs .wrap {
   display: inline-block; }
 
+#team h6 {
+  margin-top: 20px; }
 #team img {
   width: 100%; }
 #team ul {
   padding-left: 0; }
   #team ul li {
     padding: 0; }
+#team .wrap-member {
+  transition: all 2s ease; }
+  #team .wrap-member h3, #team .wrap-member h4 {
+    margin: 0;
+    visibility: invisible; }
+  #team .wrap-member a {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%; }
+  #team .wrap-member:hover {
+    background-color: white; }
+    #team .wrap-member:hover h3, #team .wrap-member:hover h4 {
+      visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
