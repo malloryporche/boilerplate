@@ -223,6 +223,9 @@
 					<li class="wrap-member col-sm-12 col-md-6">
 						<a href="#">
 							<h3>Max McNeill</h3>
+							<h4>CEO</h4>
+							<email><h6>reachout@malloryburke.com</h6></email>
+							<telephone><h6>+000 123 4567</h6></telephone>
 						</a>
 						<img src="./imgs/glasses-800x800.jpg" alt="guy with sunglasses">
 					</li>
@@ -240,11 +243,24 @@
 			</section>
 			<!-- Contact Us Section -->
 			<section class="container-fluid" id="contact">
-				<h2>Drop Us A line</h2>
-				<p>The simple contact form on right comes packed within this theme, and the Contact Form 7 plugin is supported by this theme to meet your further requirements.</p>
-				<address>175 Fifth Avenue<br>New York, NY 10010</address>
-				<tel>+000 123 456 7</tel><br>
-				<email><a href="mailto:reachout@malloryburke.com">reachout@malloryburke.com</a></email>
+				<article class="row">
+					<div class="col-sm-12 col-md-6">
+						<h2>Drop Us A line</h2>
+						<p>The simple contact form on right comes packed within this theme, and the Contact Form 7 plugin is supported by this theme to meet your further requirements.</p>
+						<address>175 Fifth Avenue<br>New York, NY 10010</address>
+						<tel>+000 123 456 7</tel><br>
+						<email><a href="mailto:reachout@malloryburke.com">reachout@malloryburke.com</a></email>
+					</div>
+					<div class="colp-sm-12 col-md-6">
+						<form action="mail.php" class="form", method="POST">
+							<p><input type="text" id="user_name" placeholder="Name" name="user_name"></p>
+							<p><input type="text" id="user_email" placeholder="Email" name="user_email"></p>
+							<p><textarea name="message" id="user_response" placeholder="Your review"></textarea></p>
+							<div class="btn"><input type="submit" id="send_form" name="send_form" value="SEND"></div>
+						</form>
+					</div>
+				</article>
+
 				<!-- Contact Form -->
 			</section>
 	</main>

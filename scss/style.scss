@@ -84,6 +84,9 @@ h2, h3, h4, h5, h6 {
 h2 ~ h3, h4 ~ h5 {
   text-transform: none;
 }
+address, tel, email {
+  text-align: center;
+};
 /* Mobile navbar toggle */
 span.icon-bar {
   background-color: white;
@@ -260,5 +263,11 @@ article ul div {
         visibility: visible;
       }
     }
+  }
+}
+
+#contact {
+  div {
+    text-align: center;
   }
 }

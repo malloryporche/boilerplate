@@ -60,6 +60,9 @@ h2, h3, h4, h5, h6 {
 h2 ~ h3, h4 ~ h5 {
   text-transform: none; }
 
+address, tel, email {
+  text-align: center; }
+
 /* Mobile navbar toggle */
 span.icon-bar {
   background-color: white; }
@@ -197,5 +200,8 @@ article ul div {
     background-color: white; }
     #team .wrap-member:hover h3, #team .wrap-member:hover h4 {
       visibility: visible; }
+
+#contact div {
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
