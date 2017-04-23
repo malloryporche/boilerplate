@@ -18,7 +18,8 @@ main, .container-fluid {
   padding: 0; }
 
 footer {
-  padding: 20px; }
+  padding: 20px;
+  text-align: center; }
 
 main.container-fluid {
   margin-top: 1200px; }
@@ -183,7 +184,8 @@ article ul div {
 #team img {
   width: 100%; }
 #team ul {
-  padding-left: 0; }
+  padding-left: 0;
+  margin-bottom: 0; }
   #team ul li {
     padding: 0; }
 #team .wrap-member {
@@ -202,6 +204,19 @@ article ul div {
       visibility: visible; }
 
 #contact div {
-  text-align: center; }
+  text-align: center;
+  padding: 80px 30px; }
+  #contact div .btn {
+    padding: 5px; }
+  #contact div:first-of-type {
+    background-color: #F2F2F5; }
+  #contact div:nth-of-type(2n) {
+    background: #313139; }
+#contact form {
+  background-color: #313139; }
+  #contact form input.text, #contact form textarea {
+    width: 100%;
+    background-color: #313139;
+    margin: 5px; }
 
 /*# sourceMappingURL=style.css.map */

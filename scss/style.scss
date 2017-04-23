@@ -39,6 +39,7 @@ main, .container-fluid {
 }
 footer {
   padding: 20px;
+  text-align: center;
 }
 main.container-fluid {
   margin-top: 1200px;
@@ -241,6 +242,7 @@ article ul div {
   }
   ul {
   padding-left: 0;
+  margin-bottom: 0;
     li {
       padding: 0;
     }
@@ -269,5 +271,24 @@ article ul div {
 #contact {
   div {
     text-align: center;
+    padding: 80px 30px;
+    .btn {
+      padding: 5px;
+    }
+    &:first-of-type {
+      background-color: $primary_color;
+    }
+    &:nth-of-type(2n) {
+      background: $secondary_color;
+    }
   }
+  form {
+    background-color: $secondary_color;
+    input.text, textarea {
+      width: 100%;
+      background-color: $secondary_color;
+      margin: 5px;
+    }
+  }
+
 }
