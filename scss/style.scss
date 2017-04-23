@@ -88,6 +88,13 @@ h2 ~ h3, h4 ~ h5 {
 address, tel, email {
   text-align: center;
 };
+article {
+  display: inline-block;
+  &.row {
+    width: 100%;
+    margin: 0;
+  }
+}
 /* Mobile navbar toggle */
 span.icon-bar {
   background-color: white;
@@ -140,12 +147,8 @@ article ul div {
 .wrap {
   position: relative;
   overflow: hidden;
-  transition: all 2s ease-in-out;
   li {
     display: table;
-  }
-  img, h3 {
-    transition: all 2s ease-in-out;
   }
     &:hover {
       img {
@@ -253,10 +256,7 @@ article ul div {
       visibility: invisible;
     }
     a {
-      position: absolute;
       top: 50%;
-      text-align: center;
-      width: 100%;
     }
     transition: all 2s ease;
     &:hover {
