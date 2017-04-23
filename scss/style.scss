@@ -228,6 +228,14 @@ article ul div {
     display: inline-block;
   }
 }
-#team ul {
+#team {
+  img {
+    width: 100%;
+  }
+  ul {
   padding-left: 0;
+    li {
+      padding: 0;
+    }
+  }
 }

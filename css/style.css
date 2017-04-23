@@ -175,7 +175,11 @@ article ul div {
 #blogs .wrap {
   display: inline-block; }
 
+#team img {
+  width: 100%; }
 #team ul {
   padding-left: 0; }
+  #team ul li {
+    padding: 0; }
 
 /*# sourceMappingURL=style.css.map */
